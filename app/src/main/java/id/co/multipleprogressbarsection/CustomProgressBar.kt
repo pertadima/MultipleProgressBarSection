@@ -19,11 +19,17 @@ class CustomProgressBar @JvmOverloads constructor(
 ) : SeekBar(context, attrs) {
 
     private val listProgressItem = mutableListOf<ProgressItem>()
-    private var roundedRadius: Float = 0F
+    private var roundedRadius = 0F
+    private var textColor = android.R.color.black
 
-    fun initData(listProgressItem: List<ProgressItem>, roundedRadius: Float = 25F) {
+    fun initData(
+        listProgressItem: List<ProgressItem>,
+        roundedRadius: Float = 25F,
+        textColor: Int = android.R.color.black
+    ) {
         this.listProgressItem.addAll(listProgressItem)
         this.roundedRadius = roundedRadius
+        this.textColor = textColor
     }
 
     @Synchronized
@@ -68,7 +74,7 @@ class CustomProgressBar @JvmOverloads constructor(
                         (lastProgressX + progressItemRight) / HALF_SIZE,
                         progressBarHeight + TEXT_SIZE * HALF_SIZE,
                         Paint().apply {
-                            color = ContextCompat.getColor(context, android.R.color.black)
+                            color = ContextCompat.getColor(context, textColor)
                             textAlign = Paint.Align.CENTER
                             textSize = TEXT_SIZE.convertToDp()
                         })

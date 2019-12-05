@@ -5,7 +5,6 @@ package id.co.multipleprogressbarsection
  */
 
 data class ProgressItem(
-    val name: String,
     val color: Int,
     val percentage: Float
 )

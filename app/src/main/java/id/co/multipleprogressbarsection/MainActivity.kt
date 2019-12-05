@@ -7,11 +7,11 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity() {
     private val dummyData by lazy {
         mutableListOf(
-            ProgressItem("Video", android.R.color.holo_blue_light, 20F),
-            ProgressItem("Topic Exercise", android.R.color.holo_orange_light, 30F),
-            ProgressItem("Bank Soal", android.R.color.holo_red_light, 10F),
-            ProgressItem("Quiz", android.R.color.holo_purple, 15F),
-            ProgressItem("Other", android.R.color.holo_green_light, 25F)
+            ProgressItem(android.R.color.holo_blue_light, 20F),
+            ProgressItem(android.R.color.holo_orange_light, 30F),
+            ProgressItem(android.R.color.holo_red_light, 10F),
+            ProgressItem(android.R.color.holo_purple, 15F),
+            ProgressItem(android.R.color.holo_green_light, 25F)
         )
     }
 
