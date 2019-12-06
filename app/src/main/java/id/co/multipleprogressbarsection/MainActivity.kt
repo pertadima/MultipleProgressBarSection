@@ -6,12 +6,12 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     private val dummyData by lazy {
-        mutableListOf(
-            ProgressItem(android.R.color.holo_blue_light, 20F),
-            ProgressItem(android.R.color.holo_orange_light, 30F),
-            ProgressItem(android.R.color.holo_red_light, 10F),
-            ProgressItem(android.R.color.holo_purple, 15F),
-            ProgressItem(android.R.color.holo_green_light, 25F)
+        hashMapOf(
+            android.R.color.holo_blue_light to 20F,
+            android.R.color.holo_orange_light to 30F,
+            android.R.color.holo_red_light to 10F,
+            android.R.color.holo_purple to 15F,
+            android.R.color.holo_green_light to 25F
         )
     }
 

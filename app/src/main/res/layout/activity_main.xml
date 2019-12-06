@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <id.co.multipleprogressbarsection.CustomProgressBar
+    <id.co.multipleprogressbar.MultipleProgressBar
         android:id="@+id/progress_section"
         android:layout_width="match_parent"
         android:layout_height="60dp"
@@ -15,5 +15,7 @@
         android:max="100"
         android:progress="0"
         android:progressDrawable="@android:color/transparent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:bar_rounded="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:text_color="@android:color/black" />
 </androidx.constraintlayout.widget.ConstraintLayout>
